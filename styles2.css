@@ -1,0 +1,15 @@
+/* Background */
+body {
+    background: url('BocaSchool-fade.jpg') no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 3); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+/* Centered Login Form */
+.login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+}

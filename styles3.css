@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('BocaSchool.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white; /* Ensures that the text is visible on the background */
+}
+
+/* Overlay to darken the background for better contrast */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: -1; /* Ensures the overlay stays behind the content */
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent dark navbar */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .dropdown-item {
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+    background-color: #28a745 !important;
+    color: white !important;
+}
+
+/* Center Logo and Title */
+.navbar-brand-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.school-logo {
+    max-height: 100px;
+    margin-bottom: 5px;
+}
+
+.school-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Info Section */
+.info-section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with some transparency */
+    border-radius: 10px;
+    margin-top: 40px;
+    color: black;
+}
